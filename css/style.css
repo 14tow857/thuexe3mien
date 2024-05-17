@@ -6,6 +6,16 @@
     --border:1rem solid rgba(217, 108, 108, 0.3);
 
 }
+*{
+    font-family:'Roboto',sans-serif;
+    margin:0;padding:0;
+    box-sizing:border-box;
+    outline:none;border:none;
+    text-decoration:none;
+    text-transform:capitalize;
+    transition: .2s linear;
+
+}
 
 html{
     font-size:62.5%;
@@ -129,6 +139,9 @@ body{
     font-size:2rem;
     color:var(--black);
     cursor: pointer;
+}
+.header .cart-items-container .cart-item .fa-times:hover{
+    color:var(--main-color);
 }
 
 .header .cart-items-container .cart-item img{
