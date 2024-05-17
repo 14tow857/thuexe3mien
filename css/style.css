@@ -317,3 +317,68 @@ section{
 .products .box .btn:hover {
     background: #ff3e3e;
 }
+/* About section styling */
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.about .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about .heading span {
+    color: #007BFF;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about .image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about .content {
+    flex: 2;
+    padding: 20px;
+}
+
+.about .content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about .content h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.about .content ul {
+    margin-left: 20px;
+}
+
+.about .content ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .about .row {
+        flex-direction: column;
+    }
+}
