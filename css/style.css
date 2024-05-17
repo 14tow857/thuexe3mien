@@ -37,6 +37,9 @@ html::-webkit-scrollbar-thumb{
 body{
     background: var(--bg);
 }
+section{
+    padding:2rem 7%;
+}
 .btn{
     margin-top: 1rem;
     display:inline-block;
@@ -162,12 +165,16 @@ body{
     text-align: center;
 
 }
+/*Thay đổi hình ảnh khi kích thước màn hình thay đổi*/
 @media(max-width:991px){
     html{
         font-size:55%;
     }
     .header{
         padding:1.5rem 2rem;
+    }
+    section{
+        padding :2rem;
     }
 }
 @media(max-width:991px){
@@ -189,4 +196,28 @@ body{
         padding:.5rem;
         font-size: 2rem;
     }
+}
+/* Ảnh trang chủ*/
+.home{
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     background: url(../img/bgr.jpeg) no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 60rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+.home .content p{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#eee;
 }
