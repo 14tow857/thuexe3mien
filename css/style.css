@@ -157,3 +157,9 @@ body{
     color:var(--main-color);
     
 }
+@media(max-width:991px){
+    #menu-btn{
+        display:inline-block;
+    }
+
+}
