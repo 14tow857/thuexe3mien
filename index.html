@@ -31,9 +31,10 @@
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
+    
     <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
+        <input type="search" id="search-box" placeholder="Tìm kiếm...">
+        <button id="search-btn">Tìm kiếm</button>
     </div>
 
     <div class="cart-items-container">
@@ -190,8 +191,23 @@ Sao chép mã
     </div>
 </section>
 <!-- Phần sản phẩm kết thúc -->
+<script>
+    // Lấy phần tử input và nút tìm kiếm từ DOM
+    const searchBox = document.getElementById('search-box');
+    const searchBtn = document.getElementById('search-btn');
 
+    // Định nghĩa hàm xử lý sự kiện tìm kiếm
+    function handleSearch() {
+        const searchText = searchBox.value.toLowerCase(); // Lấy nội dung của ô input tìm kiếm
 
+        // Làm điều gì đó với searchText, chẳng hạn như chuyển hướng đến trang kết quả tìm kiếm
+        // Trong ví dụ này, chúng ta chỉ hiển thị nội dung của searchText ra console
+        console.log(searchText);
+    }
+
+    // Gắn sự kiện click vào nút tìm kiếm
+    searchBtn.addEventListener('click', handleSearch);
+</script>
 <!--custom js file link-->
 <script src="js/script.js"></script>
 </body>

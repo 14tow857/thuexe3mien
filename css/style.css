@@ -453,3 +453,28 @@ section{
 .box .btn:hover {
     background-color: #0056b3;
 }
+/* search*/
+.search-form {
+    position: relative;
+    margin-left: auto;
+}
+
+#search-box {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    background-color: #00fffb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
