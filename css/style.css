@@ -130,64 +130,85 @@
 
 
 
-/* About section styling */
+/* css about thanh cuôn nội dung*/
+
 .about {
-    padding: 50px 20px;
-    background-color: #fff;
-    margin: 20px 0;
+    background-color: white;
+    border: 2px solid yellow;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .about .heading {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
     color: #333;
-}
-
-.about .heading span {
-    color: #007BFF;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .about .row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.about .image {
-    flex: 1;
-    padding: 20px;
+.about .row .image {
+    flex: 1 1 40%;
+    max-width: 40%;
+    margin-right: 20px;
 }
 
-.about .image img {
+.about .row .image img {
     max-width: 100%;
     border-radius: 10px;
 }
 
 .about .content {
-    flex: 2;
-    padding: 20px;
+    flex: 1 1 55%;
+    max-width: 55%;
 }
 
-.about .content h2 {
-    font-size: 1.5rem;
+.about .content .section {
+    margin-bottom: 20px;
+}
+
+.about .content .section .collapsible {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
     margin-bottom: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    display: block;
 }
 
-.about .content h3 {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #007BFF;
+.about .content .section .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/*Tràn màn*/
+.about .content .section .toggle-section:checked + .collapsible + .content {
+    max-height: 300px; 
+    overflow: auto; 
+}
+.about .image {
+    flex: 1;
+    padding: 25px;
+    height: 90%; /* Đảm bảo hình ảnh kéo theo chiều dọc của phần tử cha */
 }
 
-.about .content ul {
-    margin-left: 20px;
+.about .image img {
+    max-width: 100%;
+    height: 100%; /* Đảm bảo hình ảnh kéo theo chiều dọc của màn hình */
+    border-radius: 10px;
 }
 
-.about .content ul li {
-    margin-bottom: 10px;
-}
+
 
 /* Responsive styling */
 .to-bottom {
