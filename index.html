@@ -20,9 +20,9 @@
     <nav class="navbar">
         <a href="index.html#home">Trang chủ</a>
         <a href="about.html">Thông Tin</a>
-        <a href="index.html#list">Danh Sách</a>
+        <a href="list.html">Danh Sách</a>
         <a href="product.html">Sản Phẩm</a>
-        <a href="index.html#review">Đánh Giá</a>
+        <a href="review.html">Đánh Giá</a>
         <a href="index.html#blogs">Blogs</a>
     </nav>
     <div class="icons">
@@ -31,10 +31,9 @@
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
-    
     <div class="search-form">
-        <input type="search" id="search-box" placeholder="Tìm kiếm...">
-        <button id="search-btn">Tìm kiếm</button>
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
     </div>
 
     <div class="cart-items-container">
@@ -100,8 +99,8 @@ Sao chép mã
     <nav class="navbar">
         <a href="index.html#home">Trang chủ</a>
         <a href="about.html">Thông Tin</a>
-        <a href="index.html#list">Danh Sách</a>
-        <a href="index.html">Sản Phẩm</a>
+        <a href="list.html">Danh Sách</a>
+        <a href="product.html">Sản Phẩm</a>
         <a href="index.html#review">Đánh Giá</a>
         <a href="index.html#blogs">Blogs</a>
     </nav>
@@ -113,39 +112,7 @@ Sao chép mã
 </header>
 <!--header section ends-->
 
-product.html
-html
-Sao chép mã
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông Tin - ADT Car</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<!--header section starts-->
-<header class="header">
-    <a href="index.html" class="logo">
-        <img src="img/logo.png" alt="Logo">
-    </a>
-    <nav class="navbar">
-        <a href="index.html#home">Trang chủ</a>
-        <a href="about.html">Thông Tin</a>
-        <a href="index.html#list">Danh Sách</a>
-        <a href="product.html">Sản Phẩm</a>
-        <a href="index.html#review">Đánh Giá</a>
-        <a href="index.html#blogs">Blogs</a>
-    </nav>
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
-</header>
+
 
 
 
@@ -166,8 +133,8 @@ Sao chép mã
 
 
 <!-- Phần sản phẩm bắt đầu -->
-<section class="products">
-    <h1 class="heading">Xe Thuê <span>Yêu Thích</span></h1>
+<section class="products" id="products">
+    <h1 class="heading">Sản Phẩm <span>Mới Nhất</span></h1>
     <div class="box-container">
         <div class="box">
             <img src="img/car1.jpeg" alt="Xe 01">
@@ -187,27 +154,10 @@ Sao chép mã
             <div class="price">$20.99/-</div>
             <a href="#" class="btn">Thuê Ngay</a>
         </div>
-        <!-- Thêm các sản phẩm khác tương tự -->
-    </div>
+        
 </section>
 <!-- Phần sản phẩm kết thúc -->
-<script>
-    // Lấy phần tử input và nút tìm kiếm từ DOM
-    const searchBox = document.getElementById('search-box');
-    const searchBtn = document.getElementById('search-btn');
 
-    // Định nghĩa hàm xử lý sự kiện tìm kiếm
-    function handleSearch() {
-        const searchText = searchBox.value.toLowerCase(); // Lấy nội dung của ô input tìm kiếm
-
-        // Làm điều gì đó với searchText, chẳng hạn như chuyển hướng đến trang kết quả tìm kiếm
-        // Trong ví dụ này, chúng ta chỉ hiển thị nội dung của searchText ra console
-        console.log(searchText);
-    }
-
-    // Gắn sự kiện click vào nút tìm kiếm
-    searchBtn.addEventListener('click', handleSearch);
-</script>
 <!--custom js file link-->
 <script src="js/script.js"></script>
 </body>
