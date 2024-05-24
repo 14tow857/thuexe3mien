@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Xe - Hà Nội - ADT Car</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header section starts-->
+<div id="wrapper">
+    <div id="header">
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="list.html">Xe Dành Cho Bạn</a>
+            </div>
+            <div class="item">
+                <a href="">Blog</a>
+            </div>
+            <div class="item">
+                <a href="about.html">Điều Khoản & Chính Sách</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </div>
+        <div id="actions">
+            <div class="item">
+                <img src="img/user.png" alt="User">
+            </div>
+            <div class="item">
+                <img src="img/cart.png" alt="Cart">
+            </div>
+        </div>
+    </div>
+<!--header section ends-->
+
+<!--list section starts-->
+<section class="car-list" id="list">
+    <h1 class="heading"><span></span></h1>
+    <div class="content">
+        <div class="section">
+            <label for="city">Chọn Tỉnh:</label>
+            <select name="city" id="city" onchange="location = this.value;">
+                <option value="">Chọn Tỉnh</option>
+                <option value="list-hanoi.html">Hà Nội</option>
+                <option value="list-hcm.html">Hồ Chí Minh</option>
+                <option value="list-tatca.html">Tất Cả</option>
+                <!-- Add more cities as needed -->
+            </select>
+        </div>
+    </div>
+    <div class="content">
+        <div class="car-container">
+            <div class="car">
+                <img src="img/camry.jpg" alt="Toyota Camry">
+                <div class="car-details">
+                    <h2>Toyota Camry</h2>
+                    <ul>
+                        <li>Động cơ: 2.5L 4 xi-lanh</li>
+                        <li>Công suất: 203 HP</li>
+                        <li>Mức tiêu hao nhiên liệu: 8.4 L/100km</li>
+                        <li>Giá thuê: 1,500,000 VND/ngày</li>
+                    </ul>
+                    <a href="#" class="btn">Thuê Ngay</a>
+                </div>
+            </div>
+            <div class="car">
+                <img src="img/civic.jpg" alt="Honda Civic">
+                <div class="car-details">
+                    <h2>Honda Civic</h2>
+                    <ul>
+                        <li>Động cơ: 1.8L 4 xi-lanh</li>
+                        <li>Công suất: 158 HP</li>
+                        <li>Mức tiêu hao nhiên liệu: 6.9 L/100km</li>
+                        <li>Giá thuê: 1,200,000 VND/ngày</li>
+                    </ul>
+                    <a href="#" class="btn">Thuê Ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--list section ends-->
+
+<!--custom js file link-->
+<script src="js/script.js"></script>
+</body>
+</html>
+
