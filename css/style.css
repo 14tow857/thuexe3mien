@@ -47,6 +47,8 @@
 #banner {
     width: 100%;
     background-image :url("bg/bgr.jpeg");
+    background-repeat: no-repeat;
+    background-size:contain;
     height: 463px;
     margin-top:40px;
     display: flex;
@@ -133,8 +135,8 @@
 /* css about thanh cuôn nội dung*/
 
 .about {
-    background-color: rgb(54, 97, 165);
-    border: 2px solid rgb(0, 255, 106);
+    background-color: white;
+    border: 2px solid yellow;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -346,6 +348,9 @@
 
 #saleoff .box-right {
     background-image:url("bg/abt.jpg");
+    background-size:cover;
+    background-position:50%;
+    background-repeat:no-repeat;
 }
 
 
@@ -383,18 +388,32 @@
 }
 
 #list-comment .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 100%;
-    background:#151414;
+    background:#362f2f;
     border-radius: 20px;
     padding-top:50px;
 }
 
 #list-comment .item .avatar {
-    text-align: center;
-    margin-top:13px;
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px;
 }
-
+#list-comment .item .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 #list-comment .item .stars {
     display: flex;
     margin:0px auto;
@@ -407,7 +426,7 @@
 #list-comment .item .name {
     text-align: center;
     font-weight: bold;
-    color:#030303;
+    color:#fff;
 }
 
 #list-comment .item .text {
@@ -415,6 +434,7 @@
     color:#fff;
    
 }
+
 
 #lastpage {
     width: 100%;
@@ -469,7 +489,7 @@
 /* Car list section styling */
 .car-list {
     padding: 50px 20px;
-    background-color: #0d0c0c;
+    background-color: #fff;
     margin: 20px 0;
 }
 
@@ -572,14 +592,28 @@
     margin-right: 0;
     
 }
+.text-overlay {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 75%;
+    color: white;
+    text-align:left; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 
 .fix-img {
-    width: 130%;
+    position: relative;
+    display: inline-block; 
+    width: 170%;
     height: auto;
     overflow: hidden;
+    margin-left:-70px;
 }
 .fix-img img {
-    width: 130%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -587,7 +621,7 @@
 .swiper-container  h2 {
     text-align:center;
     margin-bottom: 100px;
-    margin-top: 100px;
-    font-size:28px;
+    margin-top: 150px;
+    font-size:30px;
     color:#626a67;
 }
