@@ -11,6 +11,7 @@
     /* Kích thước màn hình là 1280 x 720 */
     width: 100%;
     height: 100vh;
+    
 }
 #header {
     width: 100%;
@@ -19,6 +20,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
+   
+
 }
 
 #menu {
@@ -58,7 +61,7 @@
 #banner .box-right img.rounded-corners {
     border-radius: 30px; /* Điều chỉnh giá trị này để thay đổi độ bo tròn */
     display: block;
-    width: 40%; /* Hoặc giá trị kích thước tùy ý */
+    width: 50%; /* Hoặc giá trị kích thước tùy ý */
     height: auto;
     margin-bottom: 10px; /* Khoảng cách giữa các ảnh, tùy chỉnh theo ý muốn */
 }
@@ -73,6 +76,7 @@
 }
 
 #banner .box-left p {
+    
     color:#D0D0D0;
 }
 
@@ -212,21 +216,10 @@
 
 
 
-/* Responsive styling */
-.to-bottom {
-    position:absolute;
-    bottom:-40px;
-    left:50%;
-    transform:translateX(-50%);
-}
-
 
 
 #wp-products {
-    padding-top:116px;
-    padding-bottom: 78px;
-    padding-left:134px;
-    padding-right:134px;
+    margin:100px;
 }
 
 #wp-products h2 {
@@ -245,8 +238,8 @@
 }
 
 #list-products .item {
-    width: 290px;
-    height: 374px;
+    width: 300px;
+    height: 400px;
     background:#362f2f;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -278,14 +271,15 @@
     font-size:12px;
     margin-top:auto;
     text-align: center;
-    color:#626a67;
+    padding-left: 10%;
+    color:#fff;
 }
 
 #list-products .item .price {
     text-align: center;
     color:#f42424;
     font-weight: bold;
-    margin-top:20px;
+    margin-top:30px;
 }
 
 
@@ -303,8 +297,8 @@
 
 .list-page .item {
     margin:0px 15px;
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     background:#362f2f;
     border-radius: 50%;
     display: flex;
@@ -357,9 +351,8 @@
 #comment {
     width: 1012px;
     height: 478px;
-    margin:0px auto;
-    margin-top:184px;
-    margin-bottom: 50px;
+    margin:10px auto;
+    
 }
 
 #comment h2 {
@@ -372,9 +365,7 @@
 
 #comment-body{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 1000px;
     height: 400px;
     list-style: none;
     overflow: hidden;
@@ -384,7 +375,7 @@
     width: 100%;
     height: 100%;
     list-style: none;
-    transition:0.5s;
+    
 }
 
 #list-comment .item {
@@ -400,19 +391,18 @@
 }
 
 #list-comment .item .avatar {
-    width: 100px; 
-    height: 100px; 
-    overflow: hidden; 
+    width:100px;
+    overflow: hidden;
     border-radius: 50%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 10px;
+    
+    
+    
+   
 }
 #list-comment .item .avatar img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
 }
 #list-comment .item .stars {
     display: flex;
@@ -574,10 +564,7 @@
         width: 100%;
     }
 }
-.swiper-container {
-    width: 100%;
-    height: auto;
-}
+
 .swiper-wrapper {
     display: flex;
     padding: 5% 15%;
@@ -585,52 +572,44 @@
 }
 .swiper-slide {
     width: 160px;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 auto;
-    align-items: center;
-    margin-right: 0;
     
 }
 .text-overlay {
     position: absolute;
     bottom: 0; 
     left: 0;
-    width: 75%;
+    width: 100%;
     color: white;
     text-align:left; 
     padding: 20px;
     box-sizing: border-box;
 }
 .location{
-    padding-bottom: 15%;
-    box-sizing: border-box;
+    margin-bottom: 10%;
 }
 .count{
     position: absolute;
     bottom: 0; 
     left: 0;
-    width: 75%;
+    width: 100%;
     color: white;
     text-align:left; 
-    padding: 20px;
-    box-sizing: border-box;
+    margin: 20px;
+
 }
 
 
 .fix-img {
     position: relative;
-    display: inline-block; 
+    display: flex;
+    justify-content: center;
     width: 170%;
     height: auto;
-    overflow: hidden;
     margin-left:-70px;
 }
 .fix-img img {
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 .swiper-container  h2 {
@@ -641,12 +620,41 @@
     color:#626a67;
 }
 /* style blog*/
+.tieude{
+    display:flex;
+    justify-content: center;
+    align-items: center ;
+    padding-top:50px;
+
+}
+.tieude h2{
+    color: #286c78;
+}
+.blog-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width: 300px;
+    border-radius: 10px;
+    background-color: #ceb2b2;
+    overflow: hidden;
+    margin:10px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+
 .content{
     width: 100%;
     margin-top:100px;
     background:#fff;
     padding:20px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
 
 }
@@ -656,9 +664,15 @@
 
 }
 .blog-post h2{
-    color:#68aed6;
-    margin-bottom: 0.5rem;
+
+    color:#286c78;
+    margin: 0.5rem;
 
 
+    
 }
+.blog-post  p{
+    margin:0.5rem;
+}
+
 
