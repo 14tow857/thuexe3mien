@@ -1,0 +1,57 @@
+/* style blog*/
+.tieude{
+    display:flex;
+    justify-content: center;
+    align-items: center ;
+    padding-top:50px;
+
+}
+.tieude h2{
+    color: #286c78;
+}
+.blog-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width: 300px;
+    border-radius: 10px;
+    background-color: #ceb2b2;
+    overflow: hidden;
+    margin:10px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+
+.content{
+    width: 100%;
+    margin-top:100px;
+    background:#fff;
+    padding:20px;
+    border-radius: 8px;
+
+}
+.blog-post{
+    margin-bottom: 2em;
+
+
+}
+.blog-post h2{
+
+    color:#286c78;
+    margin: 0.5rem;
+
+
+    
+}
+.blog-post  p{
+    margin:0.5rem;
+}
+
+

@@ -1,0 +1,74 @@
+.about {
+    background-color: white;
+    border: 2px solid yellow;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.about .heading {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .row .image {
+    flex: 1 1 40%;
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.about .row .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about .content {
+    flex: 1 1 55%;
+    max-width: 55%;
+}
+
+.about .content .section {
+    margin-bottom: 20px;
+}
+
+.about .content .section .collapsible {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    display: block;
+}
+
+.about .content .section .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/*Tràn màn*/
+.about .content .section .toggle-section:checked + .collapsible + .content {
+    max-height: 300px; 
+    overflow: auto; 
+}
+.about .image {
+    flex: 1;
+    padding: 25px;
+    height: 90%; /* Đảm bảo hình ảnh kéo theo chiều dọc của phần tử cha */
+}
+
+.about .image img {
+    max-width: 100%;
+    height: 100%; /* Đảm bảo hình ảnh kéo theo chiều dọc của màn hình */
+    border-radius: 10px;
+}
