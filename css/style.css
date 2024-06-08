@@ -51,7 +51,7 @@
     width: 100%;
     background-image :url("bg/bgr.jpeg");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:55%;
     height: 463px;
     margin-top:40px;
     display: flex;
@@ -61,7 +61,7 @@
 #banner .box-right img.rounded-corners {
     border-radius: 30px; /* Điều chỉnh giá trị này để thay đổi độ bo tròn */
     display: block;
-    width: 50%; /* Hoặc giá trị kích thước tùy ý */
+    width: 30%; /* Hoặc giá trị kích thước tùy ý */
     height: auto;
     margin-bottom: 10px; /* Khoảng cách giữa các ảnh, tùy chỉnh theo ý muốn */
 }
@@ -133,100 +133,82 @@
 }
 
 
-#wp-products {
-    margin:100px;
-}
-
-#wp-products h2 {
-    text-align: center;
-    margin-bottom: 76px;
-    font-size:32px;
-    color:#626a67;
-}
-
-#list-products {
+.car-container {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.bestsell h2{
+    margin: 100px 0px;
+    text-align: center;
+    color: rgb(93, 96, 96);
+    font-size: 28px;
 }
 
-#list-products .item {
-    width: 300px;
-    height: 400px;
-    background:#362f2f;
+.car {
+    background-color: #6a6565;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 400px;
+    text-align: center;
+}
+.car .model{
+    width:350px;
+    height:250px;
     border-radius: 10px;
-    margin-bottom: 50px;
 }
 
-#list-products .item img {
-    display: block;
-    margin:0px auto;
-    margin-top:17px;
-    max-width: 200px; /* Thiết lập chiều rộng tối đa của hình ảnh */
-    height: auto; 
+.car .model img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
 }
 
-#list-products .item .stars {
-
-    display: flex;
-    margin:0px auto;
-    width: 50%;
+.car-details h2 {
+    font-size: 1.5rem;
+    color: #cb8e8e;
+    margin:10px;    
+    
 }
 
-#list-products .item .name {
-    text-align: center;
-    color:#fff;
-    font-weight: bold;
-    margin-top:21px;
-}
-
-#list-products .item .desc {
-    font-size:12px;
-    margin-top:auto;
-    text-align: center;
-    padding-left: 10%;
-    color:#fff;
-}
-
-#list-products .item .price {
-    text-align: center;
-    color:#f42424;
-    font-weight: bold;
-    margin-top:30px;
-}
-
-
-.list-page {
-    width: 50%;
-    margin:0px auto;
-}
-
-.list-page {
-    display: flex;
+.car-details ul {
+    
     list-style: none;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
 }
 
-.list-page .item {
-    margin:0px 15px;
-    width: 40px;
-    height: 40px;
-    background:#362f2f;
-    border-radius: 50%;
+.car-details ul li {
+    font-size: 1rem;
+    color: #fff;
+    margin:20px;
+    
+}
+.car-details .by{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.list-page .item a {
-    color:#fff;
+.car-details .by a{
     text-decoration: none;
+    background-color: #060707;
+    padding:10px 20px;
+    border-radius: 20px;
+    color:#fff;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.car-details .by a:hover{
+    background-color: tomato;
 }
 
 
 #saleoff {
+    margin-top: 150px;
     width: 100%;
     display: flex;
     height: 322px;
@@ -345,10 +327,10 @@
 #lastpage {
     width: 100%;
     background:rgb(0,0,0,0.79);
-    height: 322px;
-    margin-top:338px;
-    padding:0px 63px;
-    padding-top:57px;
+    height: 320px;
+    margin-top:340px;
+    padding:0px 60px;
+    padding-top:60px;
     display: flex;
     justify-content: space-around;
 }
@@ -376,8 +358,8 @@
 
 
 #lastpage .box form input {
-    width: 294px;
-    height: 42px;
+    width: 300px;
+    height: 40px;
     background:transparent;
     padding-left:20px;
     color:#fff;
@@ -387,63 +369,42 @@
 #lastpage .box form button {
     background:#362f2f;
     box-shadow: 5px 5px 4px rgba(0,0,0.25);
-    width: 163px;
-    height: 38px;
-    margin-top:29px;
+    width: 160px;
+    height: 40px;
+    margin-top:30px;
     color:#fff;
 }
 
-.swiper-wrapper {
-    display: flex;
-    padding: 5% 15%;
-    justify-content: space-between; /* Cách đều các slide */
+.swiper-container h2{
+    color: rgb(93, 96, 96);
+    font-size: 28px;
+    text-align: center;
+    margin: 100px 0px;
 }
-.swiper-slide {
-    width: 160px;
+.swiper-wrapper{
+    display:flex;
+    padding:0px 200px;
+}
+.swiper-slide{
+    display: flex;
+
+}
+.swiper-slide .fix-img{
+    position: relative;
+    
+    flex-wrap: wrap;
     
 }
-.text-overlay {
+.swiper-slide .fix-img img{
+    width: 80%;
+}
+.text-overlay{
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     left: 0;
-    width: 100%;
-    color: white;
-    text-align:left; 
-    padding: 20px;
-    box-sizing: border-box;
+    color: aliceblue;
+    padding:10px 20px;
 }
-.location{
-    margin-bottom: 10%;
-}
-.count{
-    position: absolute;
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-    color: white;
-    text-align:left; 
-    margin: 20px;
-
-}
-
-
-.fix-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 170%;
-    height: auto;
-    margin-left:-70px;
-}
-.fix-img img {
-    width: 100%;
-    height: auto;
-}
-
-.swiper-container  h2 {
-    text-align:center;
-    margin-bottom: 100px;
-    margin-top: 150px;
-    font-size:30px;
-    color:#626a67;
+.text-overlay:hover{
+    color: #efb631;
 }
