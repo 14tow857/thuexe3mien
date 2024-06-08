@@ -1,4 +1,5 @@
 /* style blog*/
+
 .tieude{
     display:flex;
     justify-content: center;
@@ -8,12 +9,17 @@
 }
 .tieude h2{
     color: #286c78;
+    padding: 10px 20px; 
+    border: 2px solid #0d0e0e; 
+    border-radius: 5px; 
+    display: inline-block; 
+    background-color: #f9f9f9; 
 }
 .blog-container{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .card{
@@ -40,7 +46,6 @@
 .blog-post{
     margin-bottom: 2em;
 
-
 }
 .blog-post h2{
 
@@ -53,5 +58,29 @@
 .blog-post  p{
     margin:0.5rem;
 }
-
-
+.footer-content{
+    display:flex;
+}
+.left {
+    width:60%;
+}
+.right {
+    width:40%;
+}
+.footer {
+    background-color: #323737;
+    color:#f8f8f684;
+    padding:10px;
+    text-align: center;
+    width: 100%;
+}
+.right img {
+    width:225px;
+    border-radius: 400px;
+}
+.left h3{
+    margin-top: 4px;
+}
+.left p{
+    margin-top: 10px;
+}

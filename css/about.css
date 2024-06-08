@@ -1,5 +1,5 @@
 .about {
-    background-color: white;
+    background-color: rgb(173, 167, 167);
     border: 2px solid yellow;
     padding: 20px;
     margin: 20px;
@@ -20,8 +20,9 @@
 
 .about .row .image {
     flex: 1 1 40%;
-    max-width: 40%;
-    margin-right: 20px;
+    max-width: 50%;
+    height: auto;
+    margin-right: 10px;
 }
 
 .about .row .image img {
@@ -71,4 +72,18 @@
     max-width: 100%;
     height: 100%; /* Đảm bảo hình ảnh kéo theo chiều dọc của màn hình */
     border-radius: 10px;
+}
+.link {
+    color:aliceblue;
+    text-decoration: none;
+}
+.link:hover {
+    color:aliceblue;
+    text-decoration: underline;
+}
+.footer {
+    background-color:rgb(74, 65, 65);
+    color:#f1f1f1;
+    padding:20px;
+    text-align: center;
 }

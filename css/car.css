@@ -1,15 +1,11 @@
-/* Car list section styling */
+
 .car-list {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #5b2d2d;
     margin: 20px 0;
 }
-
-.car-list .heading {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
+.car-list {
+    margin-top: 15px;
 }
 
 .car-list .heading span {
