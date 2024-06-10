@@ -317,12 +317,7 @@
 
 }
 #list-comment .item .stars {
-    display: flex;
-    margin:0px auto;
-    width: 50%;
     margin-top:32px;
-    justify-content: center;
-    align-items: center;
 }
 
 #list-comment .item .name {
@@ -414,11 +409,12 @@
 }
 .swiper-slide{
     display: flex;
+    margin:10px;
 
 }
 .swiper-slide .fix-img{
     position: relative;
-    
+    display:flex;
     flex-wrap: wrap;
     
 }

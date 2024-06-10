@@ -34,15 +34,6 @@
     height: auto;
 }
 
-
-.content{
-    width: 100%;
-    margin-top:100px;
-    background:#fff;
-    padding:20px;
-    border-radius: 8px;
-
-}
 .blog-post{
     margin-bottom: 2em;
 
@@ -103,5 +94,5 @@
     font-weight: bold;
 }
 .card .more a:hover{
-    color: #aa2525;
+    color: #61ddd3;
 }
