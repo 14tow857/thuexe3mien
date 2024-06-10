@@ -58,15 +58,17 @@
     padding:0px 133px;
     position:relative;
 }
-#banner .box-right img.rounded-corners {
-    border-radius: 30px; /* Điều chỉnh giá trị này để thay đổi độ bo tròn */
-    display: block;
-    width: 30%; /* Hoặc giá trị kích thước tùy ý */
-    height: auto;
-    margin-bottom: 10px; /* Khoảng cách giữa các ảnh, tùy chỉnh theo ý muốn */
-}
+
+
 #banner .box-left ,#banner .box-right {
     width: 50%;
+}
+#banner .box-right img.rounded-corners {
+    border-radius: 30px;
+    display: block;
+    width: 50%; 
+    height: auto;
+    margin-bottom: 10px; 
 }
 
 #banner  .box-left h2 {
@@ -75,15 +77,14 @@
     color:#fff;
 }
 
-#banner .box-left p {
-    
+#banner .box-left p {  
     color:#D0D0D0;
 }
 #banner .box-left button {
     width: 191px;
     height: 40px;
     margin-top:41px;
-    background:#1d1a1a;
+    background:#1d16ea;
     border:none;
     outline:none;
     color:#fff;
@@ -140,10 +141,14 @@
     margin-top: 20px;
 }
 .bestsell h2{
-    margin: 100px 0px;
+    margin: 30px 0px;
     text-align: center;
-    color: rgb(93, 96, 96);
+    color: rgb(236, 241, 241);
     font-size: 28px;
+    border-radius: 10px;
+    border:2px solid #4c4e4e;
+    background-color: #3f3c3c;
+    padding :20px 30px;
 }
 
 .car {
@@ -169,7 +174,7 @@
     
 }
 
-.car-details h2 {
+.car-details h3 {
     font-size: 1.5rem;
     color: #cb8e8e;
     margin:10px;    
@@ -252,11 +257,15 @@
     
 }
 
-#comment h2 {
-    text-align:center;
-    margin-bottom: 100px;
-    font-size:28px;
-    color:#626a67;
+#comment h4 {
+    margin: 30px 0px;
+    text-align: center;
+    color: rgb(236, 241, 241);
+    font-size: 28px;
+    border-radius: 10px;
+    border:2px solid #4c4e4e;
+    background-color:  #3f3c3c;
+    padding :20px 30px;
 }
 
 
@@ -327,8 +336,8 @@
 #lastpage {
     width: 100%;
     background:rgb(0,0,0,0.79);
-    height: 320px;
-    margin-top:340px;
+    height: 360px;
+    margin-top:250px;
     padding:0px 60px;
     padding-top:60px;
     display: flex;
@@ -344,7 +353,6 @@
     margin-top:40px;
 
 }
-
 
 #lastpage .box .quick-menu .item{
     margin-bottom:12px;
@@ -376,10 +384,14 @@
 }
 
 .swiper-container h2{
-    color: rgb(93, 96, 96);
-    font-size: 28px;
+    margin: 30px 0px;
     text-align: center;
-    margin: 100px 0px;
+    color: rgb(236, 241, 241);
+    font-size: 28px;
+    border-radius: 10px;
+    border:2px solid #4c4e4e;
+    background-color:  #3f3c3c;
+    padding :20px 30px;
 }
 .swiper-wrapper{
     display:flex;
