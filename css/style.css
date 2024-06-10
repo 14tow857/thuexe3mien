@@ -30,12 +30,18 @@
 }
 
 #menu .item {
-    margin:0px 25px;
+    margin:0px 35px;
 }
 
 #menu .item a {
-    color:#0d0e0e;
+    font-size:18px;
+    color:#696e6e;
     text-decoration: none;
+    transition:0.2s;
+    
+}
+#menu .item a:hover{
+    color:#6cd7d7
 }
 
 
@@ -52,10 +58,10 @@
     background-image :url("bg/bgr.jpeg");
     background-repeat: no-repeat;
     background-size:55%;
-    height: 463px;
+    height: 460px;
     margin-top:40px;
     display: flex;
-    padding:0px 133px;
+    padding:0px 130px;
     position:relative;
 }
 
@@ -66,7 +72,7 @@
 #banner .box-right img.rounded-corners {
     border-radius: 30px;
     display: block;
-    width: 50%; 
+    width: 40%; 
     height: auto;
     margin-bottom: 10px; 
 }
@@ -81,10 +87,10 @@
     color:#D0D0D0;
 }
 #banner .box-left button {
-    width: 191px;
+    width: 190px;
     height: 40px;
     margin-top:41px;
-    background:#1d16ea;
+    background:#1a1a1b;
     border:none;
     outline:none;
     color:#fff;
@@ -106,7 +112,7 @@
 
 #banner .box-right img {
     margin:0px 10px;
-    animation :animation 3s infinite linear; 
+    animation :animation 1s infinite linear alternate; 
 }
 
 
@@ -119,17 +125,17 @@
     
     animation-delay: 1s;
 }
+#banner .box-right img:nth-child(2)
+{
+    
+    animation-delay: 1.5s;
+}
 
 @keyframes animation {
-    0%{
-        transform:translateY(0px);
+    to{
+        transform:translateY(20px);
     }
-    50%{
-        transform: translateY(-10px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+
     
 }
 
@@ -141,7 +147,7 @@
     margin-top: 20px;
 }
 .bestsell h2{
-    margin: 30px 0px;
+    margin: 100px 0px;
     text-align: center;
     color: rgb(236, 241, 241);
     font-size: 28px;
@@ -244,21 +250,21 @@
 
 #saleoff .box-right {
     background-image:url("bg/abt.jpg");
-    background-size:cover;
-    background-position:50%;
+    background-size:100%;
+    background-position:60%;
     background-repeat:no-repeat;
 }
 
 
 #comment {
-    width: 1012px;
-    height: 478px;
+    width: 1100px;
+    height: 480px;
     margin:10px auto;
     
 }
 
 #comment h4 {
-    margin: 30px 0px;
+    margin: 100px 0px;
     text-align: center;
     color: rgb(236, 241, 241);
     font-size: 28px;
@@ -362,6 +368,15 @@
     color:#fff;
     text-decoration: none;
 }
+.box .logo{
+    width:250px;
+    
+}
+.box .logo img{
+    width:100%;
+    border-radius:100px;
+    border:none;
+}
 
 
 
@@ -384,7 +399,7 @@
 }
 
 .swiper-container h2{
-    margin: 30px 0px;
+    margin: 100px 0px;
     text-align: center;
     color: rgb(236, 241, 241);
     font-size: 28px;
@@ -418,5 +433,5 @@
     padding:10px 20px;
 }
 .text-overlay:hover{
-    color: #efb631;
+    color: #31efef;
 }
